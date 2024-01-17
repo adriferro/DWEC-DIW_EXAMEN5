@@ -1,6 +1,6 @@
 /**
  * @author Adrián Fernández Rodríguez
- * @github
+ * @github https://github.com/adriferro/DWEC-DIW_EXAMEN5.git
  */
 
 const formulario = document.getElementById("formulario")

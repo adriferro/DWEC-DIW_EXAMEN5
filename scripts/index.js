@@ -27,7 +27,7 @@ const validar = (e) => {
 
     !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(correo.value.trim()) && mensajesError.push("Introduce una dirección de correo electrónico válida"),
     correo.style.outline = '1px solid red';
-
+    
     mensaje.value.trim().length < 5 && mensajesError.push("Mensaje demasiado corto"),
     mensaje.style.outline = '1px solid red';
 
@@ -59,6 +59,6 @@ const info = (e2) => {
     }
 }
 
-formulario.addEventListener('',info);
+formulario.addEventListener('submit',info);
 
 formulario.addEventListener('submit',validar);

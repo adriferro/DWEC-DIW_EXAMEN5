@@ -16,4 +16,6 @@ const validar = (e) => {
 
     nombre.value.trim().length === 0 && mensajesError.push("El nombre es un campo obligatorio"),
     nombre.style.outline = '1px solid red';
+
+    /^[a-zA-Z]*$/.test(nombre.value.trim()) && mensajesError.push("Un nombre propio comienza siempre por una letra mayúscula y no contiene números")
 }

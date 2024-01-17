@@ -32,7 +32,7 @@
     background: url(/img/hero-image.jpg) center/cover;
     height: 80vh;
     position: relative;
-    clip-path: ellipse();
+    clip-path: ellipse(50% 35% at 50% 50%);
     text-align: center;
 }
 

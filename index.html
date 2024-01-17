@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="hero-container">
+        <h1>Asturian Natural Trails</h1>
+        <h3>Las mejores rutas de montaña para hacer senderismo</h3>
+    </div>
+
+    <div class="form-container">
+        <form action="/templates/enviado.html" method="get" id="formulario">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <input type="text" id="correo" name="correo" placeholder="Correo electrónico">
+            <label for="infor">Solicitud de información adicional</label>
+            <input type="radio" name="infor" id="infor"></button>
+            <label for="infor">Reserva de ruta</label>
+            <input type="radio"></button>
+            <input type="submit" value="Info" class="btn">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar" class="btn">
+
+            <ul id="errores"></ul>
+        </form>
+    </div>
+
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

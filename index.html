@@ -9,19 +9,19 @@
 <body>
     <div class="hero-container">
         <h1>Asturian Natural Trails</h1>
-        <h3>Las mejores rutas de montaña para hacer senderismo</h3>
+        <span>Las mejores rutas de montaña para hacer senderismo</span>
     </div>
 
     <div class="form-container">
         <form action="/templates/enviado.html" method="get" id="formulario">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            <input type="text" id="correo" name="correo" placeholder="Correo electrónico">
-            <label for="infor">Solicitud de información adicional</label>
-            <input type="radio" name="infor" id="infor"></button>
-            <label for="infor">Reserva de ruta</label>
-            <input type="radio"></button>
-            <input type="submit" value="Info" class="btn">
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br>
+            <input type="text" id="correo" name="correo" placeholder="Correo electrónico"><br>
+            <label for="infor">Solicitud de información adicional</label><br>
+            <input type="radio" name="infor" id="infor" checked></button><br>
+            <label for="reserva">Reserva de ruta</label><br>
+            <input type="radio" name="reserva"></button><br>
+            <input type="submit" value="Info" class="btn"><br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
             <input type="submit" value="Enviar" class="btn">
 
             <ul id="errores"></ul>

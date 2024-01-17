@@ -12,7 +12,7 @@ const errores = document.getElementById("errores")
 
 const validar = (e) => {
     e.preventDefault()
-    let mensajesError=[]
+    mensajesError=[]
 
     nombre.value.trim().length === 0 && mensajesError.push("El nombre es un campo obligatorio"),
     nombre.style.outline = '1px solid red';
@@ -27,5 +27,19 @@ const validar = (e) => {
     mensaje.style.outline = '1px solid red';
 
 
-    
+    if(mensajesError>0){
+        errores.textContent = ''
+
+        mensajesError.forEach(error => {
+            errores.innerHTML += `<li>${error}</li>`
+        })
+        errores.style.color = red
+    } else if (mensajesError === 0 && confirm("¿Desea enviar el formulario?")){
+        errores.textContent = ''
+        errores.textContent = 'Enviado correctamente'
+
+        formulario.submit();
+    }
 }
+
+formulario.addEventListener('submit',validar);
